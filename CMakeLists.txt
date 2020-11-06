@@ -14,7 +14,6 @@ target_link_libraries(OSG_static_example
     osgdb_rgb
     osgdb_png
     osgdb_jpeg
-    osgdb_gdal
     osgdb_zip
     osgDB
     osg
