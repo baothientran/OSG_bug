@@ -22,7 +22,6 @@ int main(int, char **argv)
     if (rw) {
         // set relative path for GSModel
         osg::ref_ptr<osgDB::Options> options = new osgDB::Options();
-        options->setObjectCacheHint(osgDB::Options::CACHE_NONE);
         options->setDatabasePath(GSModelZip.parent_path());
 
         // read GSModel geometry
