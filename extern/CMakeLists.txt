@@ -1,0 +1,10 @@
+project(extern)
+
+SET(DYNAMIC_OPENTHREADS OFF CACHE BOOL "Build OSG Applications")
+SET(DYNAMIC_OPENSCENEGRAPH OFF CACHE BOOL "Build OSG Applications")
+SET(BUILD_OSG_APPLICATIONS OFF CACHE BOOL "Build OSG Applications")
+add_subdirectory(OpenSceneGraph)
+
+set(osg_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/OpenSceneGraph/include ${CMAKE_CURRENT_BINARY_DIR}/OpenSceneGraph/include)
+set(osg_INCLUDE_DIR ${osg_INCLUDE_DIR} PARENT_SCOPE)
+set(osg_INCLUDE_DIRS ${osg_INCLUDE_DIR} PARENT_SCOPE)
